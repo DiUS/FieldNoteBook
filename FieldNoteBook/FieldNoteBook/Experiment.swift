@@ -24,8 +24,15 @@ class Experiment : NSObject, NSCoding {
     self.hypothesis   = decoder.decodeObjectForKey("hypothesis") as String
     self.uuid         = decoder.decodeObjectForKey("uuid") as String
     self.dateCreated  = decoder.decodeObjectForKey("dateCreated") as NSDate
+    
+    // collections
+    self.fields       = decoder.decodeObjectForKey("fields") as Array<Field>
+    self.observations = decoder.decodeObjectForKey("observations") as Array<Observation>
 
-    // TODO add optional fields too....
+    // optionals
+    if let dateFinished = decoder.decodeObjectForKey("dateFinished") as? NSDate { self.dateFinished = dateFinished }
+    if let conclusion = decoder.decodeObjectForKey("conclusion") as? String { self.conclusion = conclusion }
+    
   }
   
   func encodeWithCoder(coder: NSCoder) {
@@ -33,8 +40,19 @@ class Experiment : NSObject, NSCoding {
     coder.encodeObject(self.hypothesis,   forKey: "hypothesis")
     coder.encodeObject(self.uuid,         forKey: "uuid")
     coder.encodeObject(self.dateCreated,  forKey: "dateCreated")
+    
+    // collections
+    coder.encodeObject(self.fields,       forKey: "fields")
+    coder.encodeObject(self.observations, forKey: "observations")
 
-    // TODO add optional fields too....
+    // optionals
+    if let dateFinished = self.dateFinished {
+      coder.encodeObject(dateFinished, forKey: "dateFinished")
+    }
+    if let conclusion = self.conclusion {
+      coder.encodeObject(conclusion, forKey: "conclusion")
+    }
+
   }
   
   func save() {
