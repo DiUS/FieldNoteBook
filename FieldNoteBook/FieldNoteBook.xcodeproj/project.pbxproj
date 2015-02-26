@@ -17,6 +17,9 @@
 		1FE8EE7A1A9E946A004A49F9 /* Observations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE791A9E946A004A49F9 /* Observations.storyboard */; };
 		1FE8EE7C1A9E948C004A49F9 /* Design.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE7B1A9E948C004A49F9 /* Design.storyboard */; };
 		1FE8EE7E1A9E949C004A49F9 /* Conclusion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE7D1A9E949C004A49F9 /* Conclusion.storyboard */; };
+		919CEEFA1A9E988B00A4D53B /* Experiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CEEF91A9E988B00A4D53B /* Experiment.swift */; };
+		919CEEFC1A9E9B2100A4D53B /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CEEFB1A9E9B2100A4D53B /* Observation.swift */; };
+		919CEEFE1A9E9CBD00A4D53B /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CEEFD1A9E9CBD00A4D53B /* Field.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		1FE8EE791A9E946A004A49F9 /* Observations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Observations.storyboard; sourceTree = "<group>"; };
 		1FE8EE7B1A9E948C004A49F9 /* Design.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Design.storyboard; sourceTree = "<group>"; };
 		1FE8EE7D1A9E949C004A49F9 /* Conclusion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conclusion.storyboard; sourceTree = "<group>"; };
+		919CEEF91A9E988B00A4D53B /* Experiment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Experiment.swift; sourceTree = "<group>"; };
+		919CEEFB1A9E9B2100A4D53B /* Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
+		919CEEFD1A9E9CBD00A4D53B /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 				1FE8EE791A9E946A004A49F9 /* Observations.storyboard */,
 				1FE8EE7B1A9E948C004A49F9 /* Design.storyboard */,
 				1FE8EE7D1A9E949C004A49F9 /* Conclusion.storyboard */,
+				919CEEF91A9E988B00A4D53B /* Experiment.swift */,
+				919CEEFB1A9E9B2100A4D53B /* Observation.swift */,
+				919CEEFD1A9E9CBD00A4D53B /* Field.swift */,
 			);
 			path = FieldNoteBook;
 			sourceTree = "<group>";
@@ -227,9 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				919CEEFA1A9E988B00A4D53B /* Experiment.swift in Sources */,
 				1FE8EE5C1A9E92B9004A49F9 /* DetailViewController.swift in Sources */,
+				919CEEFE1A9E9CBD00A4D53B /* Field.swift in Sources */,
 				1FE8EE5A1A9E92B9004A49F9 /* MasterViewController.swift in Sources */,
 				1FE8EE581A9E92B9004A49F9 /* AppDelegate.swift in Sources */,
+				919CEEFC1A9E9B2100A4D53B /* Observation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +435,7 @@
 				1FE8EE751A9E92B9004A49F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FE8EE761A9E92B9004A49F9 /* Build configuration list for PBXNativeTarget "FieldNoteBookTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +444,7 @@
 				1FE8EE781A9E92B9004A49F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
