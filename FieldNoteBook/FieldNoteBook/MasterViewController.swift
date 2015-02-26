@@ -32,6 +32,7 @@ class MasterViewController: UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         self.objects = Experiment.all()
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,7 +46,7 @@ class MasterViewController: UITableViewController {
         if let svc = self.splitViewController {
             svc.toggleMasterView()
         }
-        presentViewController(newExperimentNavController, animated: true, nil)
+        presentViewController(newExperimentNavController, animated: true, completion:nil)
     }
 
     // MARK: - Segues
@@ -53,9 +54,9 @@ class MasterViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let object = objects[indexPath.row] as Experiment
+                let experiment = objects[indexPath.row] as Experiment
                 let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController
-                controller.detailItem = object
+                controller.detailItem = experiment
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -76,7 +77,9 @@ class MasterViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
 
         let experiment = objects[indexPath.row] as Experiment
-        cell.textLabel!.text = experiment.name
+        if let label = cell.textLabel {
+            label.text = experiment.name
+        }
         return cell
     }
 
