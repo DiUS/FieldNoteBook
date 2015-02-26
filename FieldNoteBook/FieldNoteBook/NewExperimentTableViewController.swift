@@ -44,6 +44,7 @@ class NewExperimentTableViewController: UITableViewController {
     
     @IBAction func save(sender: UIBarButtonItem) {
         var experiment = Experiment(name: experimentName.text, hypothesis: hypothesis.text)
+        experiment.save()
         dismissViewControllerAnimated(true, completion: nil)
     }
 
