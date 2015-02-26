@@ -14,11 +14,12 @@
 		1FE8EE611A9E92B9004A49F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE601A9E92B9004A49F9 /* Images.xcassets */; };
 		1FE8EE641A9E92B9004A49F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE621A9E92B9004A49F9 /* LaunchScreen.xib */; };
 		1FE8EE701A9E92B9004A49F9 /* FieldNoteBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8EE6F1A9E92B9004A49F9 /* FieldNoteBookTests.swift */; };
-		1FE8EE7A1A9E946A004A49F9 /* Observations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE791A9E946A004A49F9 /* Observations.storyboard */; };
+		1FE8EE7A1A9E946A004A49F9 /* AddObservation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE791A9E946A004A49F9 /* AddObservation.storyboard */; };
 		1FE8EE7C1A9E948C004A49F9 /* Design.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE7B1A9E948C004A49F9 /* Design.storyboard */; };
 		1FE8EE7E1A9E949C004A49F9 /* Conclusion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE7D1A9E949C004A49F9 /* Conclusion.storyboard */; };
 		1FE8EE801A9E9B2A004A49F9 /* NewExperimentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8EE7F1A9E9B2A004A49F9 /* NewExperimentTableViewController.swift */; };
 		1FE8EE821A9EA109004A49F9 /* NewExperiment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE811A9EA109004A49F9 /* NewExperiment.storyboard */; };
+		558D674E1A9ED5CE00A6E307 /* ObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D674D1A9ED5CE00A6E307 /* ObservationsViewController.swift */; };
 		5593CFA91A9EBEA7005ECB1C /* UISplitViewController+toggleMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593CFA81A9EBEA7005ECB1C /* UISplitViewController+toggleMaster.swift */; };
 		919CEEFA1A9E988B00A4D53B /* Experiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CEEF91A9E988B00A4D53B /* Experiment.swift */; };
 		919CEEFC1A9E9B2100A4D53B /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CEEFB1A9E9B2100A4D53B /* Observation.swift */; };
@@ -47,11 +48,12 @@
 		1FE8EE691A9E92B9004A49F9 /* FieldNoteBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FieldNoteBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE8EE6E1A9E92B9004A49F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE8EE6F1A9E92B9004A49F9 /* FieldNoteBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldNoteBookTests.swift; sourceTree = "<group>"; };
-		1FE8EE791A9E946A004A49F9 /* Observations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Observations.storyboard; sourceTree = "<group>"; };
+		1FE8EE791A9E946A004A49F9 /* AddObservation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddObservation.storyboard; sourceTree = "<group>"; };
 		1FE8EE7B1A9E948C004A49F9 /* Design.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Design.storyboard; sourceTree = "<group>"; };
 		1FE8EE7D1A9E949C004A49F9 /* Conclusion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conclusion.storyboard; sourceTree = "<group>"; };
 		1FE8EE7F1A9E9B2A004A49F9 /* NewExperimentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewExperimentTableViewController.swift; sourceTree = "<group>"; };
 		1FE8EE811A9EA109004A49F9 /* NewExperiment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewExperiment.storyboard; sourceTree = "<group>"; };
+		558D674D1A9ED5CE00A6E307 /* ObservationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationsViewController.swift; sourceTree = "<group>"; };
 		5593CFA81A9EBEA7005ECB1C /* UISplitViewController+toggleMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+toggleMaster.swift"; sourceTree = "<group>"; };
 		919CEEF91A9E988B00A4D53B /* Experiment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Experiment.swift; sourceTree = "<group>"; };
 		919CEEFB1A9E9B2100A4D53B /* Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
@@ -105,7 +107,8 @@
 				1FE8EE601A9E92B9004A49F9 /* Images.xcassets */,
 				1FE8EE621A9E92B9004A49F9 /* LaunchScreen.xib */,
 				1FE8EE551A9E92B9004A49F9 /* Supporting Files */,
-				1FE8EE791A9E946A004A49F9 /* Observations.storyboard */,
+				1FE8EE791A9E946A004A49F9 /* AddObservation.storyboard */,
+				558D674D1A9ED5CE00A6E307 /* ObservationsViewController.swift */,
 				1FE8EE5D1A9E92B9004A49F9 /* Experiments.storyboard */,
 				1FE8EE811A9EA109004A49F9 /* NewExperiment.storyboard */,
 				1FE8EE7B1A9E948C004A49F9 /* Design.storyboard */,
@@ -225,7 +228,7 @@
 				1FE8EE5F1A9E92B9004A49F9 /* Experiments.storyboard in Resources */,
 				1FE8EE821A9EA109004A49F9 /* NewExperiment.storyboard in Resources */,
 				1FE8EE7E1A9E949C004A49F9 /* Conclusion.storyboard in Resources */,
-				1FE8EE7A1A9E946A004A49F9 /* Observations.storyboard in Resources */,
+				1FE8EE7A1A9E946A004A49F9 /* AddObservation.storyboard in Resources */,
 				1FE8EE641A9E92B9004A49F9 /* LaunchScreen.xib in Resources */,
 				1FE8EE611A9E92B9004A49F9 /* Images.xcassets in Resources */,
 				1FE8EE7C1A9E948C004A49F9 /* Design.storyboard in Resources */,
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				919CEEFA1A9E988B00A4D53B /* Experiment.swift in Sources */,
+				558D674E1A9ED5CE00A6E307 /* ObservationsViewController.swift in Sources */,
 				1FE8EE5C1A9E92B9004A49F9 /* DetailViewController.swift in Sources */,
 				919CEEFE1A9E9CBD00A4D53B /* Field.swift in Sources */,
 				1FE8EE5A1A9E92B9004A49F9 /* MasterViewController.swift in Sources */,

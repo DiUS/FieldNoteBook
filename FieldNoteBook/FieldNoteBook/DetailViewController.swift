@@ -4,17 +4,21 @@
 //
 //  Created by Trevor Plant on 26/02/2015.
 //  Copyright (c) 2015 Dius. All rights reserved.
-//
 
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
     @IBOutlet weak var experimentDescription: UILabel!
 
     @IBOutlet weak var experimentTitle: UINavigationItem!
 
-    var detailItem: Experiment? {
+    @IBAction func observations(sender: AnyObject) {
+        
+    }
+    
+    
+    var experiment: Experiment? {
         didSet {
             // Update the view.
             self.configureView()
@@ -23,7 +27,7 @@ class DetailViewController: UIViewController {
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let experiment = self.detailItem {
+        if let experiment = self.experiment {
             if let navItem = self.experimentTitle {
                 navItem.title = experiment.name
             }
@@ -44,6 +48,17 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // MARK: - Segues
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        println("trying...")
+        if segue.identifier == "showObservation" {
+            //let controller = segue.destinationViewController as ObservationsViewController
+            
+            let controller = (segue.destinationViewController as UINavigationController).topViewController as ObservationsViewController
+            controller.experiment = experiment
+        }
+    }
+    
 }
 
