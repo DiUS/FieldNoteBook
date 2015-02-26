@@ -17,6 +17,8 @@
 		1FE8EE7A1A9E946A004A49F9 /* Observations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE791A9E946A004A49F9 /* Observations.storyboard */; };
 		1FE8EE7C1A9E948C004A49F9 /* Design.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE7B1A9E948C004A49F9 /* Design.storyboard */; };
 		1FE8EE7E1A9E949C004A49F9 /* Conclusion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE7D1A9E949C004A49F9 /* Conclusion.storyboard */; };
+		1FE8EE801A9E9B2A004A49F9 /* NewExperimentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8EE7F1A9E9B2A004A49F9 /* NewExperimentTableViewController.swift */; };
+		1FE8EE821A9EA109004A49F9 /* NewExperiment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8EE811A9EA109004A49F9 /* NewExperiment.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		1FE8EE791A9E946A004A49F9 /* Observations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Observations.storyboard; sourceTree = "<group>"; };
 		1FE8EE7B1A9E948C004A49F9 /* Design.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Design.storyboard; sourceTree = "<group>"; };
 		1FE8EE7D1A9E949C004A49F9 /* Conclusion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conclusion.storyboard; sourceTree = "<group>"; };
+		1FE8EE7F1A9E9B2A004A49F9 /* NewExperimentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewExperimentTableViewController.swift; sourceTree = "<group>"; };
+		1FE8EE811A9EA109004A49F9 /* NewExperiment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewExperiment.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,11 +92,13 @@
 				1FE8EE571A9E92B9004A49F9 /* AppDelegate.swift */,
 				1FE8EE591A9E92B9004A49F9 /* MasterViewController.swift */,
 				1FE8EE5B1A9E92B9004A49F9 /* DetailViewController.swift */,
-				1FE8EE5D1A9E92B9004A49F9 /* Experiments.storyboard */,
+				1FE8EE7F1A9E9B2A004A49F9 /* NewExperimentTableViewController.swift */,
 				1FE8EE601A9E92B9004A49F9 /* Images.xcassets */,
 				1FE8EE621A9E92B9004A49F9 /* LaunchScreen.xib */,
 				1FE8EE551A9E92B9004A49F9 /* Supporting Files */,
 				1FE8EE791A9E946A004A49F9 /* Observations.storyboard */,
+				1FE8EE5D1A9E92B9004A49F9 /* Experiments.storyboard */,
+				1FE8EE811A9EA109004A49F9 /* NewExperiment.storyboard */,
 				1FE8EE7B1A9E948C004A49F9 /* Design.storyboard */,
 				1FE8EE7D1A9E949C004A49F9 /* Conclusion.storyboard */,
 			);
@@ -205,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE8EE5F1A9E92B9004A49F9 /* Experiments.storyboard in Resources */,
+				1FE8EE821A9EA109004A49F9 /* NewExperiment.storyboard in Resources */,
 				1FE8EE7E1A9E949C004A49F9 /* Conclusion.storyboard in Resources */,
 				1FE8EE7A1A9E946A004A49F9 /* Observations.storyboard in Resources */,
 				1FE8EE641A9E92B9004A49F9 /* LaunchScreen.xib in Resources */,
@@ -230,6 +237,7 @@
 				1FE8EE5C1A9E92B9004A49F9 /* DetailViewController.swift in Sources */,
 				1FE8EE5A1A9E92B9004A49F9 /* MasterViewController.swift in Sources */,
 				1FE8EE581A9E92B9004A49F9 /* AppDelegate.swift in Sources */,
+				1FE8EE801A9E9B2A004A49F9 /* NewExperimentTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
