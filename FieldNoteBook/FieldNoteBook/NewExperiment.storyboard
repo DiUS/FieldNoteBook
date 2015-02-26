@@ -38,18 +38,81 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Hypothesis" id="L3Z-X4-oGf">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="400" id="ww4-VJ-MCN">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="1" indentationWidth="10" rowHeight="144" id="ww4-VJ-MCN">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ww4-VJ-MCN" id="XTr-As-Yhj">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="ww4-VJ-MCN" id="XTr-As-Yhj">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ae-Gq-RvT">
-                                                    <rect key="frame" x="0.0" y="-1" width="600" height="399.5"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="What is your hypothesis" translatesAutoresizingMaskIntoConstraints="NO" id="5ae-Gq-RvT">
+                                                    <rect key="frame" x="8" y="-1" width="592" height="145"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fields" id="Hcm-m3-4Ro">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="1" indentationWidth="10" rowHeight="62" id="pva-bQ-MC4">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="pva-bQ-MC4" id="8Mu-Vb-TNt">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Label for field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tpb-Oh-CLP">
+                                                    <rect key="frame" x="8" y="7" width="116" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <pickerView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lhj-Be-zS0">
+                                                    <rect key="frame" x="132" y="-59" width="600" height="162"/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="eli-Fu-G6G" id="MpB-5d-aaN"/>
+                                                        <outlet property="delegate" destination="eli-Fu-G6G" id="U7y-tT-c4D"/>
+                                                    </connections>
+                                                </pickerView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="1" indentationWidth="10" rowHeight="62" id="VGG-b6-b1o">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="VGG-b6-b1o" id="o6m-KZ-ip1">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Label for field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bpO-HO-a4e">
+                                                    <rect key="frame" x="8" y="7" width="116" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4vv-XN-gwO">
+                                                    <rect key="frame" x="132" y="-59" width="600" height="162"/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="eli-Fu-G6G" id="hcX-ff-F6G"/>
+                                                        <outlet property="delegate" destination="eli-Fu-G6G" id="Nzb-nw-6DO"/>
+                                                    </connections>
+                                                </pickerView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="1" indentationWidth="10" rowHeight="62" id="jiy-j3-pNv">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="jiy-j3-pNv" id="BRP-Yh-L2T">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Label for field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D34-0l-w37">
+                                                    <rect key="frame" x="8" y="7" width="116" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wu5-hN-wNA">
+                                                    <rect key="frame" x="132" y="-59" width="600" height="162"/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="eli-Fu-G6G" id="MuP-ve-qpg"/>
+                                                        <outlet property="delegate" destination="eli-Fu-G6G" id="FPd-2P-CL3"/>
+                                                    </connections>
+                                                </pickerView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -83,7 +146,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQr-dC-3NY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3117" y="-658"/>
+            <point key="canvasLocation" x="3169" y="-363"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wWJ-I5-Pi6">
