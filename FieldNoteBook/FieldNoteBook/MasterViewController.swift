@@ -28,7 +28,9 @@ class MasterViewController: UITableViewController {
         self.navigationItem.rightBarButtonItem = addButton
         let controllers = self.splitViewController!.viewControllers
         self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
-        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         self.objects = Experiment.all()
     }
 
