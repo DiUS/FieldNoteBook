@@ -38,9 +38,11 @@ class MasterViewController: UITableViewController {
 
     func insertNewObject(sender: AnyObject) {
         let storyBoard = UIStoryboard(name: "NewExperiment", bundle: nil)
-        let newExperiment:NewExperimentTableViewController = storyBoard.instantiateInitialViewController() as NewExperimentTableViewController
-        self.splitViewController?.toggleMasterView()
-        presentViewController(newExperiment, animated: true, nil)
+        let newExperimentNavController = storyBoard.instantiateInitialViewController() as UINavigationController
+        if let svc = self.splitViewController {
+            svc.toggleMasterView()
+        }
+        presentViewController(newExperimentNavController, animated: true, nil)
     }
 
     // MARK: - Segues

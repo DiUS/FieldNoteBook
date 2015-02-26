@@ -77,13 +77,13 @@
                     <navigationItem key="navigationItem" id="ID5-Mf-ReS"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="experimentName" destination="FJO-L1-uA9" id="cJD-iB-S6G"/>
-                        <outlet property="hypothesis" destination="5ae-Gq-RvT" id="0ff-IL-qRi"/>
+                        <outlet property="experimentName" destination="FJO-L1-uA9" id="WAa-No-faO"/>
+                        <outlet property="hypothesis" destination="5ae-Gq-RvT" id="VNc-it-6V3"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQr-dC-3NY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3111" y="-630"/>
+            <point key="canvasLocation" x="3117" y="-658"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wWJ-I5-Pi6">
@@ -104,7 +104,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OXt-dz-tQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2299" y="-630"/>
+            <point key="canvasLocation" x="2379" y="-363"/>
         </scene>
     </scenes>
 </document>
