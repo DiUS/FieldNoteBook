@@ -52,7 +52,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         defaults.removeObjectForKey(experimentsKeyConstant);
         defaults.registerDefaults([experimentsKeyConstant:Dictionary<String, AnyObject>()])
       
-        Experiment(name: "my first experiment", hypothesis: "the sky shall remain blue until the sun goes down").save()
+        var experiment = Experiment(name: "my first experiment", hypothesis: "the sky shall remain blue until the sun goes down")
+        experiment.fields.append(Field(label: "colour", type: fieldTypeString))
+        experiment.fields.append(Field(label: "mood", type: fieldTypeString))
+        experiment.save()
     }
 
     // MARK: - Split view
