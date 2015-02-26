@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as UINavigationController
         navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
         splitViewController.delegate = self
+      
+        self.bootstrapExperiments()
         return true
     }
 
@@ -43,6 +45,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+  
+    func bootstrapExperiments() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.removeObjectForKey(experimentsKeyConstant);
+        defaults.registerDefaults([experimentsKeyConstant:Dictionary<String, AnyObject>()])
+      
+        Experiment(name: "my first experiment", hypothesis: "the sky shall remain blue until the sun goes down").save()
     }
 
     // MARK: - Split view
