@@ -10,10 +10,11 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var experimentDescription: UILabel!
 
+    @IBOutlet weak var experimentTitle: UINavigationItem!
 
-    var detailItem: AnyObject? {
+    var detailItem: Experiment? {
         didSet {
             // Update the view.
             self.configureView()
@@ -22,9 +23,12 @@ class DetailViewController: UIViewController {
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail: AnyObject = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
+        if let experiment = self.detailItem {
+            if let navItem = self.experimentTitle {
+                navItem.title = experiment.name
+            }
+            if let label = self.experimentDescription {
+                label.text = experiment.hypothesis
             }
         }
     }
