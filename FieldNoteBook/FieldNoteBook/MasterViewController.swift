@@ -39,7 +39,8 @@ class MasterViewController: UITableViewController {
     func insertNewObject(sender: AnyObject) {
         let storyBoard = UIStoryboard(name: "NewExperiment", bundle: nil)
         let newExperiment:NewExperimentTableViewController = storyBoard.instantiateInitialViewController() as NewExperimentTableViewController
-        presentViewController(newExperiment, animated: true, completion: nil)
+        self.splitViewController?.toggleMasterView()
+        presentViewController(newExperiment, animated: true, nil)
     }
 
     // MARK: - Segues
