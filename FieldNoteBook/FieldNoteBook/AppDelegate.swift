@@ -59,6 +59,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
       
         var observation = Observation()
         observation.notes = "my first note!"
+        observation.addData("colour", value: "blue")
+        observation.addData("mood", value: "pretty happy")
       
         experiment.observations.append(observation)
         experiment.save()

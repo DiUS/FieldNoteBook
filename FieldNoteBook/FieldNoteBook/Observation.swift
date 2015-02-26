@@ -3,11 +3,15 @@ import Foundation
 class Observation : NSObject, NSCoding {
   
   var dateCreated: NSDate = NSDate()
-  var data: Dictionary<Field, String> = Dictionary<Field, String>()
+  var data: Dictionary<String, String> = Dictionary<String, String>()
   var notes: String = ""
   
   override init() {
     dateCreated = NSDate()
+  }
+
+  func addData(key: String, value: String) {
+    data[key] = value
   }
   
   required init(coder decoder: NSCoder) {
