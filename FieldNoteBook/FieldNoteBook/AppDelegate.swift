@@ -56,6 +56,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         experiment.fields.append(Field(label: "colour", type: fieldTypeString))
         experiment.fields.append(Field(label: "mood", type: fieldTypeString))
         experiment.save()
+      
+        var observation = Observation()
+        observation.notes = "my first note!"
+      
+        experiment.observations.append(observation)
+        experiment.save()
     }
 
     // MARK: - Split view
