@@ -12,6 +12,7 @@ class Field: Hashable {
 
 func ==(lhs: Field, rhs: Field) -> Bool {
   return lhs.label == rhs.label
+         && lhs.type == rhs.type
 }
 
 enum FieldType {
